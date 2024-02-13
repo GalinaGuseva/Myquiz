@@ -44,8 +44,8 @@ try {
     $mail->SMTPDebug = 0;
     $mail->Host   = 'smtp.yandex.ru';  // Адрес SMTP сервера
     $mail->SMTPAuth   = true;          // Enable SMTP authentication
-    $mail->Username   = 'galinagus57';       // ваше имя пользователя (без домена и @)
-    $mail->Password   = 'Recklama33';    // ваш пароль
+    $mail->Username   = '';       // ваше имя пользователя (без домена и @)
+    $mail->Password   = '';    // ваш пароль
     $mail->SMTPSecure = 'tls';
     $mail->Port       = 587;
     $mail->setFrom('galinagus57@yandex.ru', 'Лучший в мире Квиз');    // от кого
