@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Мой квиз</title>
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>		 		
+<form class="quiz" name="quiz">        
+   <div class="quiz__head">
+	 <h5 class="quiz__head_text">Ответьте на несколько вопросов и выберите бонус</h5>
+	  <img class="quiz__head_img"
+	   src="img/gift.svg"
+	   alt="gift" />
+	  <p class="quiz__head_text">Бонус: <span class="accent" id="bonus">не выбран!</span></p>
+   </div>		
+   <div class="quiz__slider">
+	  <div class="quiz__progress">
+		 <div class="quiz__progress_bar" id="bar"></div> 
+		 </div>			
+		 <p class="quiz__question"></p>
+		 <ul class="quiz__answers">				
+			<li class="quiz__answer" id="answer1">
+				<label class="quiz__answer__label">					
+					<input type="radio" name="q1" value="Visitka"  id="ans-0" class="visually-hidden" onkeydown="if(event.keyCode==13){return false;}">										
+					<div class="quiz__answer_text"></div>
+					<div class="yes"></div>											
+				</label>									
+			</li>
+			<li class="quiz__answer" id="answer2">
+				<label class="quiz__answer__label">					
+					<input type="radio" name="q1" value="Лендинг"  id="ans-1" class="visually-hidden" onkeydown="if(event.keyCode==13){return false;}" >						
+					<div class="quiz__answer_text"></div>
+					<div class="yes"></div>									    
+				</label>				
+			</li>
+			<li class="quiz__answer">
+				<label class="quiz__answer__label">									
+					<input type="radio" name="q1" value="Многостраничный сайт"  id="ans-2" class="visually-hidden">					
+					<div class="quiz__answer_text"></div>
+					<div class="yes"></div>								
+				</label>
+			</li>
+			<li class="quiz__answer">
+				<label class="quiz__answer__label">									
+					<input type="radio" name="q1" value="Другое"  id="ans-3" class="visually-hidden">						
+					<div class="quiz__answer_text"></div>
+					<div class="yes"></div>								
+				</label>				
+			</li>
+			<li class="quiz__answer_t" id="ans-4">
+				<label class="quiz__answer__label">							
+					<textarea name="" placeholder="Свой вариант (напишите здесь)" value="" minlength="3" maxlength="50" class="quiz__textarea" id="text4"></textarea>												
+				</label>				
+			</li>
+		 </ul>
+	     <div class="quiz__bottom">
+			<button role="button" class="prev"></button>	 		   	   
+		   <button role="button" type='submit' class="next">Следующий вопрос<span class='flare'></span></button>		   
+		 </div>
+		 <span class="quiz__err hidden">Сначала выберите нужный пункт, затем переходите к следующему вопросу</span>
+		 <span class="policy">Нажимая на кнопку, я подтверждаю согласие с <a href="./policy">политикой обработки персональных данных</a></span>
+		</div>
+</form>	
+   
+   <script src="js/main.js"></script>
+</body>
+
+</html>
